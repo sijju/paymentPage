@@ -437,7 +437,7 @@
                     border-radius: 8px;
                   .alert{
                     display: flex;
-                    position: relative;
+                    
                     
                     flex-direction: column;
                     box-sizing: border-box;
@@ -449,20 +449,8 @@
                     border-radius: 8px;
                     align-items: flex-start;
                     background: linear-gradient(135deg, rgba(222, 67, 19, 0.2) 0%, rgba(222, 67, 19, 0.2) 0.75%, rgba(254, 193, 99, 0.2) 100%);
-                
-                    .alert::before{
-                        content: '';
-                        position: absolute;
-                        top:0;
-                        left:0;
-                        width: 100%;
-                        height: 100%;
-                        border: 2px solid transparent;
-                        border-image-slice: 1;
-                        border-image-source:linear-gradient(135deg, #DE4313 0%, #DE4313 0.75%, #DE4313 2.92%, #DE4414 6.37%, #DF4515 10.97%, #DF4816 16.59%, #E04B18 23.1%, #E1501B 30.37%, #E3561F 38.27%, #E55E24 46.66%, #E7682B 55.41%, #EB7533 64.39%, #EE843C 73.47%, #F39547 82.52%, #F8A954 91.41%, #FEC163 100%);
-                        border-radius: 8px;
-                        z-index:-1;
-                    }
+                    border: 2px solid #DE431355;
+                    
                    
                     
                     
