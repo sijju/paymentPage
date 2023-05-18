@@ -1,0 +1,152 @@
+.navbar{
+    height: 72px;
+    width:100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left{
+       margin-left:7rem;
+       cursor: pointer;
+       display: flex;
+       align-items: center;
+       gap:64px;
+       .detail{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap:18px;
+        
+         h3{
+            font-size: 16px;
+            font-weight: 500;
+         }
+       }
+    }
+
+    .right{
+      margin: auto 3rem auto;
+
+      .details{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:64px;
+        h3{
+            font-size: 16px;
+            font-weight:500;
+            cursor: pointer;
+        }
+
+        .btn{
+            border:none;
+            cursor: pointer;
+            padding:10px 42px;
+            border-radius: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 700;
+            color:#FFFFFF;
+            text-transform: uppercase;
+            background: linear-gradient(266.79deg,#0048FF 4.63%,#0096FF 100%);
+        }
+
+        } 
+        .toggle{
+          display: none;
+          background: none;
+          border: none;
+          
+          
+      }
+    }
+    
+
+    @media (min-width:768px) and (max-width:1024px){
+
+     
+   
+
+        
+        .right{
+        display: flex;
+        align-items: center;
+        position: relative;
+        .details{
+          display: none;
+
+          &.open{
+          position: absolute;
+          top:2.5rem;
+          right: 10px;
+          padding: 20px 20px;
+          display:flex;
+          background: #f7f7f7;
+          flex-direction: column;
+          gap:25px;
+            
+             .btn{
+               text-align: center;
+               font-size: 12px;
+
+             }
+          }
+          
+        }
+        .toggle{
+          display: block;
+          background: none;
+          cursor: pointer;
+          
+        }
+      }
+    }
+    @media(max-width:768px){
+
+     
+      .left{
+        margin: auto;
+        gap:20px;
+        
+      }
+   
+
+        
+      .right{
+      display: flex;
+      align-items: center;
+      position: relative;
+      .details{
+        display: none;
+
+        &.open{
+        position: absolute;
+        top:2.5rem;
+        right: 10px;
+        padding: 20px 20px;
+        display:flex;
+        background: #f7f7f7;
+        flex-direction: column;
+        gap:25px;
+          
+           .btn{
+             text-align: center;
+             font-size: 12px;
+
+           }
+        }
+        
+      }
+      .toggle{
+        display: block;
+        background: none;
+        cursor: pointer;
+        
+      }
+    }
+  }
+  
+}
